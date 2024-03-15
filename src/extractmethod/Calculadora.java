@@ -30,16 +30,19 @@ public class Calculadora {
             String userName = "John";
             int userAge = 30;
 
-            // Gerando mensagem de boas-vindas
+            // Gerando e exibindo mensagem de boas-vindas
+            String message = generateWelcomeMessage(userName, userAge);
+            System.out.println(message);
+        }
+
+        private static String generateWelcomeMessage(String userName, int userAge) {
             String message = "Olá, " + userName + "! Bem-vindo ao nosso programa.";
             if (userAge >= 18) {
                 message += " Esperamos que você aproveite sua experiência conosco!";
             } else {
                 message += " Pedimos desculpas, mas este programa é para maiores de 18 anos.";
             }
-
-            System.out.println(message);
+            return message;
         }
     }
-
 }
