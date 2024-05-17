@@ -7,22 +7,15 @@ public class Calculadora {
 
         int soma = calcularSoma(numeros);
         double media = calcularMedia(soma, numeros.length);
-
-        printResult(soma, media);
-    }
-
-    private static void printResult(int soma, double media) {
+        
         System.out.println("A soma dos números é: " + soma);
         System.out.println("A média dos números é: " + media);
 
-        int aditionalVariable = soma + media;
-
-        int layerTwo = aditionalVariable + 1;
+        double aditionalVariable = Double.valueOf(soma) + media;
     }
 
     private static void newMethodOnlyToCall() {
         main(new String[] { "" });
-        printResult(0, 0);
     }
 
     private static int calcularSoma(int[] numeros) {
@@ -30,7 +23,6 @@ public class Calculadora {
         for (int numero : numeros) {
             soma += numero;
         }
-        printResult(soma, 0);
         return soma;
     }
 
@@ -40,7 +32,7 @@ public class Calculadora {
 
     class InnerCalculator {
 
-        int notMatterField = 3;
+        int notMatterField2 = 3;
 
         public static void wellcome() {
             String userName = "John2";
