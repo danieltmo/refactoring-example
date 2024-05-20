@@ -12,7 +12,8 @@ public class ClassFilha3 extends ClassMae {
         }
     }
 
+    @Override
     public void commonMethod() {
-        System.out.println("comum");
+        System.out.println("comum editado");
     }
 }

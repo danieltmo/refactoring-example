@@ -10,7 +10,4 @@ public class ClassFilha2 extends ClassMae {
         }
     }
 
-    public void commonMethod() {
-        System.out.println("comum");
-    }
 }

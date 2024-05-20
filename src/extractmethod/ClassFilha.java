@@ -12,11 +12,6 @@ public class ClassFilha extends ClassMae {
         }
     }
 
-    
-    public void commonMethod() {
-        System.out.println("comum");
-    }
-
     public void toBeMoved() {
         boolean aMethodToBeMoved = true;
 
