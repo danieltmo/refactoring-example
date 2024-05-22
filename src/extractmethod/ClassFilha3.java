@@ -16,4 +16,13 @@ public class ClassFilha3 extends ClassMae {
     public void commonMethod() {
         System.out.println("comum editado");
     }
+
+    public void toPushDownMethod() {
+        Integer aVariable = 3;
+        aVariable = 4;
+
+        String notANumber = "NaN2";
+
+        System.out.println(notANumber + aVariable);
+    }
 }

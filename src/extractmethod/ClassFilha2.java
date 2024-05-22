@@ -10,4 +10,12 @@ public class ClassFilha2 extends ClassMae {
         }
     }
 
+    public void toBeMoved() {
+        boolean aMethodToBeMoved = true;
+
+        while (aMethodToBeMoved) {
+            aMethodToBeMoved = false;
+        }
+    }
+
 }

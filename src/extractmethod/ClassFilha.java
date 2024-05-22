@@ -12,11 +12,13 @@ public class ClassFilha extends ClassMae {
         }
     }
 
-    public void toBeMoved() {
-        boolean aMethodToBeMoved = true;
+    public void toPushDownMethod() {
+        Integer aVariable = 3;
+        aVariable = 4;
 
-        while (aMethodToBeMoved) {
-            aMethodToBeMoved = false;
-        }
+        String notANumber = "NaN33";
+
+        System.out.println(notANumber + aVariable);
     }
+   
 }
