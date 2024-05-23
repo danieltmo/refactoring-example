@@ -10,11 +10,12 @@ public class ClassFilha extends ClassMae {
         if (i == 4) {
             i = 3;
         }
+
+        toPushDownMethodRenamed();
     }
 
-    public void toPushDownMethod() {
+    public void toPushDownMethodRenamed() {
         Integer aVariable = 3;
-        aVariable = 4;
 
         String notANumber = "NaN33";
 

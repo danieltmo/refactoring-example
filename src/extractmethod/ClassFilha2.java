@@ -8,6 +8,9 @@ public class ClassFilha2 extends ClassMae {
         if (j == 4) {
             j = 3;
         }
+
+        ClassFilha classFilha = new ClassFilha();
+        classFilha.toPushDownMethodRenamed();
     }
 
     public void toBeMoved() {
