@@ -1,17 +1,20 @@
 package extractmethod;
 
-public class Calculadora {
+
+public abstract class Calculadora {
 
     public static void main(String[] args) {
         int[] numeros = { 10, 5, 8, 12, 7 };
 
         int soma = calcularSoma(numeros);
         double media = calcularMedia(soma, numeros.length);
-        
+        extractedMethod(soma, media);
+        double aditionalVariable = Double.valueOf(soma) + media;
+    }
+
+    public static void extractedMethod(int soma, double media){
         System.out.println("A soma dos números é: " + soma);
         System.out.println("A média dos números é: " + media);
-
-        double aditionalVariable = Double.valueOf(soma) + media;
     }
 
     private static void newMethodOnlyToCall() {
